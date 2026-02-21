@@ -32,6 +32,8 @@ kubectl get nodes
 Expected result:
 - 1 node in Ready state
 
+![img.png](img.png)
+
 This confirms:
 - API server is running 
 - kubectl is configured correctly 

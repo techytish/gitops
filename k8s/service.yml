@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: student-platform
+spec:
+  # NodePort exposes service externally (for kind/local)
+  type: NodePort
+
+  selector:
+    app: student-platform
+
+  ports:
+    - port: 80          # Cluster-facing port
+      targetPort: 8080  # Pod container port
+      nodePort: 30007   # External access port

@@ -31,6 +31,8 @@ Wait for pods to be ready:
 kubectl get pods -n argocd
 ```
 
+![img_1.png](img_1.png)
+
 All pods should be in `Running` state.
 
 ---
@@ -49,19 +51,23 @@ Open in browser:
 https://localhost:8080
 ```
 
+![img_2.png](img_2.png)
+
 ---
 
 ## Retrieve Admin Password
 
 ```bash
 kubectl -n argocd get secret argocd-initial-admin-secret \
--o jsonpath="{.data.password}" | base64 --decode
+-o jsonpath="{.data.password}" | base64 --decode && echo
 ```
 
 Login using:
 
 - Username: admin
 - Password: (decoded value above)
+
+![img_3.png](img_3.png)
 
 ---
 
