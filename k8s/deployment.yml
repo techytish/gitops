@@ -20,7 +20,7 @@ spec:
         - name: student-platform
 
           # ⚠️ Replace with your Docker Hub username
-          image: techytish/student-platform:latest
+          image: ${{ secrets.DOCKER_USERNAME }}/student-platform:latest
 
           # Container listens on port 8080
           ports:

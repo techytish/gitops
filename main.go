@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"net/http"
-
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
