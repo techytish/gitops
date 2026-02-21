@@ -19,7 +19,7 @@ The service is a minimal Go HTTP API exposing application metrics and designed t
 
 ## Architecture
 
-![img.png](img.png)
+![img.png](architectural-diagram.png)
 
 - Developer Push → GitHub Actions → 
 - Docker Image Build → Container Registry → 
